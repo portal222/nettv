@@ -1,16 +1,15 @@
-import React, { useEffect, useRef } from "react";
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { lime, purple, teal, green } from '@mui/material/colors';
+import React from "react";
+import { createTheme  } from '@mui/material/styles';
+import {  teal, green } from '@mui/material/colors';
 import Button from '@mui/material/Button';
 import { Routes, Route, NavLink, HashRouter } from 'react-router-dom';
 import Home from "./Home";
-import SearchMain from "./search/searchMain";
 import ResultsTvShow from "./results/ResultsTvShow";
 import DetailsTvShow from "./details/DetailsTvShow";
 import ShowImg from "./details/ShowImg";
 import DetailsActor from "./details/DetailsActor";
-import ResultsCelebsNew from "./results/ResultsCelebsNew";
 import ResultsTvActors from "./results/ResultsTvActors";
+import MainSearch from "./search/MainSearch";
 
 const theme = createTheme({
   palette: {
@@ -50,7 +49,7 @@ const Navigation = () => {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/search" element={<SearchMain />} />
+          <Route path="/search" element={<MainSearch />} />
           <Route path="/tvShow" element={<ResultsTvShow />} />
           <Route path="/tvActor" element={<ResultsTvActors />} />
           <Route path="/showDetails/:showId" element={<DetailsTvShow />} />

@@ -167,7 +167,7 @@ body {
 
 .showMain,
 .showActor {
- padding-top: 2px;
+    padding-top: 2px;
     margin: auto;
     width: 1200px;
 
@@ -203,7 +203,7 @@ body {
         font-size: 18px;
         width: 400px;
         max-width: 400px;
-        max-height: 60px;
+        max-height: 80px;
 
         overflow-x: auto;
 
@@ -237,7 +237,7 @@ body {
     }
 
     .holdImg {
-    
+
         padding-right: 10PX;
         vertical-align: top;
 
@@ -436,6 +436,7 @@ body {
         padding: 5px;
     }
 }
+
 .showActor {
     padding-top: 10px;
 }
@@ -481,7 +482,7 @@ body {
         font-size: 18px;
         width: 400px;
         max-width: 400px;
-        max-height: 60px;
+        max-height: 75px;
 
         overflow-x: auto;
 
@@ -633,7 +634,7 @@ body {
 
     }
 
-  
+
 }
 
 .collapse {
@@ -770,7 +771,7 @@ body {
         width: 355px;
         font-size: 14px;
         padding: 60px 5px 5px 5px;
-  
+
         .wrap {
             font-size: 14px;
         }
@@ -833,10 +834,10 @@ body {
         .sezone {
 
             padding-left: 4px;
-            font-size: 16px;
+            font-size: 14px;
             width: 335px;
             max-width: 335px;
-            max-height: 55px;
+            max-height: 62px;
 
         }
     }
@@ -870,10 +871,10 @@ body {
 
             padding: 2px;
             max-width: 105x;
-            
-            
+
+
             img {
-                
+
                 width: 103px;
                 border: 2px solid transparent;
 
@@ -980,7 +981,7 @@ body {
         display: block;
         margin: auto;
         width: 355px;
-       
+
         .episName {
             width: 200px;
         }
@@ -1024,7 +1025,7 @@ body {
     }
 
     .showMain {
-padding-top: 50px;
+        padding-top: 50px;
         width: 355px;
 
         .bigImg {

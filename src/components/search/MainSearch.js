@@ -1,7 +1,7 @@
 import React from "react";
 import SearchPlaceTv from "./SearchPlaceTv";
 
-const SearchMain = () => {
+const MainSearch = () => {
 
     return (
         <>
@@ -16,4 +16,4 @@ const SearchMain = () => {
 
 
 }
-export default SearchMain;
+export default MainSearch;
