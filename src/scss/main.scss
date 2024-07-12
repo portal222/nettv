@@ -1,0 +1,1102 @@
+$color1: #e1f5fe;
+$color2: #e3f2fd;
+$color3: #b3e5fc;
+$color4: #fafafa;
+
+body {
+    background-color: $color2;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.average {
+    color: transparent;
+}
+
+.provider {
+    margin: auto;
+    width: 1200px;
+
+    .fixed {
+        position: fixed;
+        width: 1200px;
+        height: 50px;
+        background-color: $color3;
+        z-index: 1;
+
+
+    }
+
+}
+
+.navigation {
+    margin: auto;
+    display: flex;
+    width: 1200px;
+    background-color: rgb(248, 141, 9);
+
+    .search {
+        display: flex;
+    }
+}
+
+.home {
+    width: 1200px;
+    margin: auto;
+    background-color: aquamarine;
+}
+
+.place {
+    margin: auto;
+
+    width: 1200px;
+    padding: 80px 10px 10px 10px;
+    justify-content: center;
+    background-image: linear-gradient($color2, $color1);
+
+
+    .placeBut {
+
+        display: flex;
+        justify-content: space-around;
+
+        .paper {
+            width: 205px;
+            height: 42px;
+            margin: 4px;
+
+            .base {
+                padding-left: 8px;
+                width: 150px;
+
+            }
+        }
+    }
+}
+
+.guestCast {
+    margin: auto;
+    width: 1200px;
+    text-align: left;
+    padding-left: 20px;
+    background-color: #cccccc;
+    font-size: 20px;
+}
+
+.gridTv {
+    padding-top: 60px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    width: 1200px;
+    gap: 0px;
+    background-image: linear-gradient($color2, $color1);
+    font-size: 18px;
+
+    .gridItem {
+        padding: 3px;
+        max-width: 200px;
+
+        text-align: center;
+
+        img {
+
+            width: 198px;
+            cursor: pointer;
+            border: 4px solid transparent;
+            transition: border 1s;
+
+            &:hover {
+                border: 4px solid #0d47a1;
+            }
+
+
+        }
+
+        .showName {
+            max-width: 197px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 1px;
+            color: #0d47a1;
+
+            &:hover {
+                color: chocolate;
+            }
+        }
+
+        .genresTv {
+            font-size: 16px;
+            display: flex;
+            padding: 0px;
+            margin: 1px;
+            padding-left: 3px;
+
+            li {
+                list-style: none;
+                padding-right: 4px;
+            }
+        }
+    }
+}
+
+// .showActor {
+//     display: flex;
+//     padding-top: 10px;
+// }
+
+.searchMain {
+    margin: auto;
+    padding-top: 120px;
+    width: 1200px;
+    height: 1400px;
+    font-size: 26px;
+    color: rgb(2, 17, 127);
+    text-shadow: 2px 2px 5px gray;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: linear-gradient($color2, $color1);
+
+}
+
+.guestCast {
+    background-color: $color3;
+    font-size: 20px;
+}
+
+.showMain,
+.showActor {
+ padding-top: 2px;
+    margin: auto;
+    width: 1200px;
+
+    background-image: linear-gradient($color2, $color1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    padding: 50px 10px 10px 10px;
+
+
+    .borderBotom {
+        border-bottom: 1px solid rgb(98, 112, 97);
+
+        p {
+            margin: 2px;
+        }
+    }
+
+    .wrap {
+
+        color: #0d47a1;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:hover {
+            color: chocolate;
+        }
+    }
+
+    .sezone {
+
+        padding-left: 6px;
+        font-size: 18px;
+        width: 400px;
+        max-width: 400px;
+        max-height: 60px;
+
+        overflow-x: auto;
+
+        p {
+            margin: 3px 0px;
+        }
+    }
+
+    .bigImg {
+        width: 1180px;
+
+        text-align: center;
+    }
+
+    .clickShow {
+        font-weight: bold;
+        font-size: 26px;
+        cursor: pointer;
+        width: 300px;
+        color: #0d47a1;
+
+        &:hover {
+            color: chocolate;
+        }
+    }
+
+    .showCast {
+        font-size: 20px;
+        border-bottom: 2px solid rgb(160, 159, 159);
+        background-color: #cccccc;
+    }
+
+    .holdImg {
+    
+        padding-right: 10PX;
+        vertical-align: top;
+
+        .imgShow {
+            margin-top: 2px;
+            min-width: 500px;
+            max-width: 500px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .imgActor {
+            min-width: 350px;
+            max-width: 350px;
+
+        }
+    }
+
+    .imgEpisode {
+        min-width: 400px;
+        max-width: 400px;
+        border-radius: 8px;
+    }
+
+    .number {
+        padding-left: 30px;
+        font-size: 22px;
+        font-weight: bold;
+        width: 100px;
+    }
+
+    .showName {
+        padding: 2px 10px;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .airDate {
+        width: 70px;
+    }
+
+    .showNameActor {
+        padding: 2px 30px;
+        font-weight: bold;
+        font-size: 28px;
+        cursor: pointer;
+        color: #0d47a1;
+
+        &:hover {
+            color: chocolate;
+        }
+    }
+
+    .forSummary {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .summary {
+        margin-left: 5px;
+        max-width: 395px;
+        min-width: 395px;
+        padding: 10px 15px;
+        font-size: 24px;
+        border: 1px solid rgb(121, 121, 121);
+        border-radius: 19px;
+    }
+
+    .summaryRes {
+        margin-left: 5px;
+        max-width: 650px;
+        min-width: 650px;
+        padding: 10px 15px;
+        font-size: 24px;
+        border: 1px solid rgb(121, 121, 121);
+        border-radius: 19px;
+    }
+
+    .language {
+        padding: 2px 10px;
+        font-weight: bold;
+        min-width: 335px;
+        max-width: 335px;
+    }
+
+    a {
+        padding-left: 8px;
+    }
+
+    .genres {
+        display: flex;
+        font-size: 20px;
+        margin: 0;
+
+        list-style: none;
+        padding: 0px 5px 0px 2px;
+
+        li {
+            padding-right: 5px;
+        }
+    }
+
+    a {
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+            color: coral;
+        }
+    }
+
+    .imgCastMain {
+        max-width: 1180px;
+
+        overflow-x: auto;
+
+        .guest {
+            display: flex;
+
+            width: 420px;
+
+            .guestImgClick,
+            .guestImg {
+                width: 200px;
+            }
+
+            .guestImgClick {
+                cursor: pointer;
+            }
+        }
+
+        .guestName {
+            display: flex;
+            justify-content: space-between;
+
+            .click {
+                cursor: pointer;
+                padding-right: 30px;
+                color: #0d47a1;
+
+                &:hover {
+                    color: chocolate;
+                }
+            }
+        }
+
+        .imgCast {
+            min-width: 240px;
+
+            p {
+                cursor: pointer;
+
+                &:hover {
+                    color: chocolate;
+                }
+            }
+        }
+    }
+
+    .nameComm {
+        font-size: 24px;
+        width: 800px;
+
+        ul {
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+            padding: 0;
+        }
+    }
+
+    .collapseTv {
+        display: flex;
+        flex-direction: row;
+        background-color: #DFFF00;
+
+
+
+    }
+
+    .tvName {
+        width: 300px;
+        font-weight: bold;
+    }
+
+    th {
+        text-align: left;
+    }
+
+    .imgTv {
+        width: 60px;
+        padding: 5px;
+    }
+}
+.showActor {
+    padding-top: 10px;
+}
+
+.details {
+    display: flex;
+    margin: auto;
+    width: 1200px;
+
+    background-image: linear-gradient($color2, $color1);
+    font-size: 18px;
+    padding: 60px 10px 10px 10px;
+
+    .wrap {
+
+        color: #0d47a1;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        vertical-align: top;
+
+        &:hover {
+            color: chocolate;
+        }
+    }
+
+    .holdImg {
+        padding-right: 10PX;
+        vertical-align: top;
+
+        .imgShow {
+            margin-top: 2px;
+            min-width: 500px;
+            max-width: 500px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+
+    .sezone {
+
+        padding-left: 6px;
+        font-size: 18px;
+        width: 400px;
+        max-width: 400px;
+        max-height: 60px;
+
+        overflow-x: auto;
+
+        p {
+            margin: 3px 0px;
+        }
+    }
+
+    .clickShow {
+        font-weight: bold;
+        font-size: 26px;
+        cursor: pointer;
+        width: 300px;
+        color: #0d47a1;
+
+        &:hover {
+            color: chocolate;
+        }
+    }
+
+    .showName {
+        padding: 2px 10px;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .showCast {
+        background-color: $color3;
+        font-size: 19px;
+    }
+
+    .summary {
+        margin-left: 5px;
+        max-width: 650px;
+        min-width: 650px;
+        padding: 10px 15px;
+        font-size: 24px;
+        background-color: $color4;
+        // border: 1px solid rgb(121, 121, 121);
+        border-radius: 19px;
+        vertical-align: top;
+    }
+
+    .runtime {
+        display: flex;
+        vertical-align: top;
+
+        .rating {
+            font-weight: bold;
+            margin: 0px;
+        }
+
+        .rating2 {
+            margin: 0px;
+            padding-left: 10px;
+            font-weight: bold;
+        }
+    }
+
+    .language {
+        padding: 2px 10px;
+        font-weight: bold;
+        min-width: 335px;
+        max-width: 335px;
+        vertical-align: top;
+    }
+
+    .genres {
+        display: flex;
+        font-size: 20px;
+        margin: 0;
+
+        list-style: none;
+        padding: 0px 5px 0px 2px;
+
+        li {
+            padding-right: 5px;
+        }
+    }
+
+    a {
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+            color: coral;
+        }
+    }
+}
+
+.sezoneList {
+    display: flex;
+    margin: auto;
+    width: 1200px;
+    background-image: linear-gradient($color2, $color1);
+
+    .epNumber {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 1px;
+    }
+
+    .epName {
+        margin: 1px;
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        width: 300px;
+    }
+
+    p {
+        margin: 1px;
+    }
+
+    .episName {
+        width: 200px;
+    }
+
+    .summaryEpis {
+        width: 540px;
+    }
+
+    .imgSezons {
+        min-width: 450px;
+        padding: 5px;
+    }
+
+    .sezonNum {
+        font-size: 25px;
+        font-weight: bold;
+        width: 50px;
+    }
+
+    .sezonDate {
+        width: 250px;
+        padding-left: 15px;
+        font-weight: bold;
+    }
+
+    .summEpis {
+        margin-top: 5px;
+        width: 450px;
+        padding: 10px 15px;
+        font-size: 22px;
+        border: 1px solid rgb(121, 121, 121);
+        border-radius: 19px;
+
+    }
+
+  
+}
+
+.collapse {
+
+    margin: auto;
+    width: 1200px;
+    border-bottom: solid 1px $color3;
+}
+
+.footer {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 500px;
+    background-color: $color2;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 300px;
+
+    color: #84867b;
+    cursor: pointer;
+    border-radius: 5px;
+
+    .arrowup {
+        align-items: center;
+
+        width: 30px;
+        height: 25px;
+        color: #7a9c99ac;
+        background-color: rgba(222, 211, 211, 0.43);
+
+        border-radius: 5px;
+        border: solid 3px #95beba7c;
+    }
+}
+
+.loader {
+    display: flex;
+    width: 1200px;
+    background-color: $color2;
+
+    height: 900px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+    .searchMain {
+        width: 355px;
+        font-size: 20px;
+    }
+
+    .guestCast {
+        width: 345px;
+        padding-left: 10px;
+        font-size: 16px;
+    }
+
+    .showActor {
+        display: block;
+        width: 355px;
+        font-size: 14px;
+        padding: 20px 5px 5px 5px;
+        // padding-top: 300px;
+
+        .holdImg {
+            padding: 2px;
+
+            .imgShow {
+                max-width: 345px;
+                min-width: 345px;
+            }
+        }
+
+        .forSummary {
+            flex-direction: column;
+        }
+
+        .summary {
+            font-size: 18px;
+        }
+
+        a {
+            font-size: 16px;
+        }
+
+        .language {
+            padding: 1px 4px;
+            max-width: 150px;
+            min-width: 150px;
+        }
+
+        .showCast {
+            max-width: 350px;
+            font-size: 16px;
+        }
+
+        .clickShow {
+            font-size: 18px;
+            max-width: 150px;
+
+            .genres {
+                font-size: 16px;
+            }
+        }
+
+        .showName {
+            padding: 1px 5px;
+
+            font-size: 22px;
+            max-width: 350px;
+        }
+
+        .genres {
+            font-size: 14px;
+        }
+
+        .sezone {
+
+            padding-left: 4px;
+            font-size: 16px;
+            width: 335px;
+            max-width: 335px;
+            max-height: 55px;
+
+        }
+    }
+
+    .details {
+        display: block;
+        width: 355px;
+        font-size: 14px;
+        padding: 60px 5px 5px 5px;
+  
+        .wrap {
+            font-size: 14px;
+        }
+
+        .holdImg {
+            padding: 2px;
+
+            .imgShow {
+                max-width: 345px;
+                min-width: 345px;
+                border-radius: 7px;
+            }
+        }
+
+        .forSummary {
+            flex-direction: column;
+        }
+
+        .summary {
+            font-size: 18px;
+            max-width: 330px;
+            min-width: 330px;
+        }
+
+        a {
+            font-size: 14px;
+        }
+
+        .language {
+            padding: 1px 4px;
+            max-width: 150px;
+            min-width: 150px;
+        }
+
+        .showCast {
+            max-width: 350px;
+            font-size: 16px;
+        }
+
+        .clickShow {
+            font-size: 18px;
+            max-width: 150px;
+
+            .genres {
+                font-size: 16px;
+            }
+        }
+
+        .showName {
+            padding: 1px 5px;
+
+            font-size: 22px;
+            max-width: 350px;
+        }
+
+        .genres {
+            font-size: 14px;
+        }
+
+        .sezone {
+
+            padding-left: 4px;
+            font-size: 16px;
+            width: 335px;
+            max-width: 335px;
+            max-height: 55px;
+
+        }
+    }
+
+    .place {
+        width: 355px;
+        padding: 50px 5px 5px 5px;
+
+
+        .placeBut {
+            padding: 2px;
+
+            display: block;
+        }
+
+    }
+
+
+    .gridTv {
+        padding-top: 60px;
+
+
+        grid-template-columns: auto auto auto;
+        width: 355px;
+
+
+
+        font-size: 16px;
+
+        .gridItem {
+
+            padding: 2px;
+            max-width: 105x;
+            
+            
+            img {
+                
+                width: 103px;
+                border: 2px solid transparent;
+
+                &:hover {
+                    border: 2px solid chocolate;
+
+                }
+            }
+
+            .showName {
+                max-width: 95px;
+                font-size: 12px;
+            }
+
+            .genresTv {
+                // max-width: 105px;
+                font-size: 11px;
+                display: flex;
+
+
+                li {
+                    list-style: none;
+                    padding-right: 2px;
+                }
+            }
+        }
+    }
+
+
+    .showActor {
+        width: 355px;
+
+        .imgCastMain {
+            // margin: auto;
+            max-width: 345px;
+
+
+
+            .guest {
+                display: flex;
+
+                width: 200px;
+
+                .guestImgClick,
+                .guestImg {
+                    width: 100px;
+                }
+            }
+
+            .guestName {
+                display: flex;
+                justify-content: space-between;
+                height: 50px;
+
+                p {
+                    width: 100px;
+                    font-size: 12px;
+                    padding-left: 3px;
+                }
+
+                .click {
+                    font-size: 12px;
+                    cursor: pointer;
+                    text-align: right;
+                    padding-right: 5px;
+                    width: 100px;
+
+                }
+            }
+
+            .imgCast {
+
+                min-width: 100px;
+            }
+        }
+
+
+        .wrap {
+            font-size: 16px;
+        }
+
+        .bigImg {
+            width: 345px;
+        }
+
+        .imgEpisode {
+            min-width: 345px;
+            max-width: 345px;
+        }
+
+        .number {
+            padding-left: 15px;
+            font-size: 18px;
+        }
+
+        .summary {
+            margin-left: 0px;
+            max-width: 345px;
+            min-width: 345px;
+        }
+    }
+
+    .sezoneList {
+        display: block;
+        margin: auto;
+        width: 355px;
+       
+        .episName {
+            width: 200px;
+        }
+
+        .epNumber {
+            font-size: 16px;
+        }
+
+        .epName {
+            font-size: 18px;
+            width: 350px;
+        }
+
+        .summaryEpis {
+            width: 345px;
+        }
+
+        .imgSezons {
+            min-width: 345px;
+            padding: 2px;
+        }
+
+        .sezonNum {
+            font-size: 18px;
+
+            width: 50px;
+        }
+
+        .sezonDate {
+            width: 250px;
+        }
+
+        .summEpis {
+            width: 350px;
+            padding: 5px 5px;
+            font-size: 18px;
+
+            border-radius: 5px;
+
+        }
+    }
+
+    .showMain {
+padding-top: 50px;
+        width: 355px;
+
+        .bigImg {
+            width: 340px;
+        }
+
+        .holdImg {
+            padding-right: 2px;
+
+            .imgShow {
+                padding-right: 3px;
+                min-width: 115px;
+                max-width: 115px;
+            }
+
+            .imgActor {
+                min-width: 110px;
+                max-width: 110px;
+
+            }
+        }
+
+        .showNameActor {
+            font-size: 22px;
+        }
+
+        a,
+        .language {
+            min-width: 95px;
+            max-width: 95px;
+            font-size: 14px;
+        }
+
+        .clickShow {
+            font-size: 22px;
+        }
+
+        .summary {
+            max-width: 100px;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+
+        .summaryRes {
+            margin-left: 3px;
+            padding: 8px 3px;
+            max-width: 100px;
+            min-width: 100px;
+            font-size: 14px;
+            border-radius: 5px;
+
+
+        }
+
+        td,
+        .genres {
+            font-size: 14px;
+        }
+    }
+
+    .collapse {
+
+        width: 345px;
+    }
+
+    .footer {
+        padding-top: 100px;
+        font-size: 14px;
+    }
+
+    .back-to-top {
+        right: 20px;
+    }
+
+}
