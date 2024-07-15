@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
-
 
 const ActorCharacterShow = (props) => {
     const [error, setError] = useState(null);
@@ -10,24 +9,19 @@ const ActorCharacterShow = (props) => {
 
     const navigate = useNavigate();
 
-
     useEffect(() => {
         getSerije();
     }, []);
 
-
     const getSerije = async () => {
 
         const urlCast = `${props.show}`
-
 
         try {
 
             const responseCast = await axios.get(urlCast);
 
             const dataCast = responseCast.data;
-
-            console.log("show karaktera glumca", dataCast);
 
             setShow(dataCast);
 
@@ -42,16 +36,11 @@ const ActorCharacterShow = (props) => {
     const clickShow = (showId) => {
         const LinkTo = `/showDetails/${showId}`;
         navigate(LinkTo);
-
     }
-
-
 
     return (
         <>
-
             <div >
-
                 <p className="clickShow"
                     onClick={() => clickShow(show.id)}>
                     {show.name}
@@ -64,21 +53,8 @@ const ActorCharacterShow = (props) => {
                 <ul className="genres">
                     <li>{show.genres?.[2]}</li>
                     <li>{show.genres?.[3]}</li>
-
                 </ul>
-
             </div>
-
-
-
-
-
-
-
-
-
-
-
 
         </>
     );

@@ -5,11 +5,9 @@ const ActorCharacter = (props) => {
     const [error, setError] = useState(null);
     const [persons, setPersons] = useState([]);
 
-
     useEffect(() => {
         getSerije();
     }, []);
-
 
     const getSerije = async () => {
 
@@ -20,8 +18,6 @@ const ActorCharacter = (props) => {
             const responseCast = await axios.get(urlCast);
 
             const dataCast = responseCast.data;
-
-            console.log("karakter glumca u seriji", dataCast);
 
             setPersons(dataCast);
         } catch (err) {

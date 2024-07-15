@@ -10,6 +10,8 @@ import ShowImg from "./details/ShowImg";
 import DetailsActor from "./details/DetailsActor";
 import ResultsTvActors from "./results/ResultsTvActors";
 import MainSearch from "./search/MainSearch";
+import TvShowOnClick from "./details/TvShowOnClick";
+
 
 const theme = createTheme({
   palette: {
@@ -55,6 +57,7 @@ const Navigation = () => {
           <Route path="/showDetails/:showId" element={<DetailsTvShow />} />
           <Route path="/imgShow/:images" element={<ShowImg />} />
           <Route path="/actorDetails/:actorId" element={<DetailsActor />} />
+          <Route path="/showClick/:showId" element={<TvShowOnClick />} />
         </Routes>
 
       </HashRouter>

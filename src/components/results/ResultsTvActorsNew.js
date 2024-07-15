@@ -1,23 +1,15 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import axios from 'axios';
-// import GlobalContext from "../GlobalContext";
 import ResultsTvTime from "./ResultsTvTime";
 import { useNavigate } from "react-router-dom";
 import BackToTop from "../BackToTop";
-
-
 
 const ResultsTvActorsNew = (props) => {
     const [error, setError] = useState(null);
     const [tvShow, setTvShow] = useState([]);
     const [results, setResults] = useState([]);
     
-
-
     const navigate = useNavigate();
-
-    // const globalCtx = useContext(GlobalContext);
-    // const searchStringValue = globalCtx.searchStringValue;
 
     useEffect(() => {
         getTvShow();
@@ -47,8 +39,6 @@ const ResultsTvActorsNew = (props) => {
         const LinkTo = `/actorDetails/${actorId}`;
         navigate(LinkTo);
     }
-
-
 
     return (
         <>

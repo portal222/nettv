@@ -3,7 +3,6 @@ import EpisodeList from "./EpisodeList";
 
 const SezoneList = (props) => {
 
-
     return (
         <>
             {props.sezone.map((sezon) => (
@@ -20,29 +19,18 @@ const SezoneList = (props) => {
                                     </tr>
                                 </tbody>
                             </table>
-
                         </div>
                         <div>
                             <img className="imgSezons"
                                 src={sezon.image?.medium} />
                         </div>
-
-
-
                       <div className="summEpis" dangerouslySetInnerHTML={{ __html: sezon.summary }}>
-                            {/* {sezon.summary?.replace('<p>', '').replace('</p>', '').replace('<b>', '').replace('</b>', '')
-                            .replace('<i>', '').replace('</i>', '').replace('<i>', '').replace('</i>', '')} */}
-                        </div>
-                       
+                        </div>  
                     </div>
                     <EpisodeList sezonId={sezon.id} />
-
                 </div>
-
             ))}
         </>
     )
-
-
 }
 export default SezoneList;

@@ -3,20 +3,14 @@ import axios from 'axios';
 import { useParams } from "react-router-dom";
 import BackToTop from "../BackToTop";
 
-
-
-
 const ShowImg = () => {
 
     const [error, setError] = useState(null);
 
     const [imageShow, setImageShow] = useState([]);
 
-
     const params = useParams()
     const images = params.images;
-
-
 
     useEffect(() => {
         getImg();
@@ -29,18 +23,14 @@ const ShowImg = () => {
         try {
             const response = await axios.get(urlImg);
             const data = response.data;
-            console.log("detalji slika", data);
             setImageShow(data)
         } catch (err) {
             setError(err);
-
         }
-
     }
 
     return (
         <>
-          
             <div
                 className="showMain">
                 {imageShow.map((image) => (
@@ -49,13 +39,9 @@ const ShowImg = () => {
                         <img src={image.resolutions.original.url} />
                     </div>
                 ))}
-
             </div>
             <BackToTop />
         </>
-
     )
-
-
 }
 export default ShowImg;

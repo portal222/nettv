@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-
 const DetailsEpisode = (props) => {
 
     const [error, setError] = useState(null);
@@ -45,15 +44,10 @@ const DetailsEpisode = (props) => {
                         <td className="clickShow"
                             onClick={() => clickShow(episode.id)}>
                             {episode.name}</td>
-                        <td className="number">
-                            S{number.season + " E" + number.number}</td>
                     </tr>
                 </tbody>
             </table>
-
         </>
-
     )
-
 }
 export default DetailsEpisode;

@@ -4,9 +4,6 @@ import { useNavigate } from "react-router-dom";
 import BackToTop from "./BackToTop";
 import Loader from "./Loader"
 
-
-
-
 const Home = () => {
 
     const [error, setError] = useState(null);
@@ -14,20 +11,12 @@ const Home = () => {
     const [serije, setSerije] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
-
     const navigate = useNavigate();
-
 
     useEffect(() => {
 
         getTv();
     }, [])
-
-
-
-
-
-
 
     const getTv = async () => {
 
@@ -39,11 +28,8 @@ const Home = () => {
             const responseTv = await axios.get(urlTv);
 
             const dataTv = responseTv.data
-            console.log("podaci iz Serija", dataTv);
             setSerije(dataTv);
             setIsLoading(false);
-
-
 
         } catch (err) {
             setError(err);
@@ -53,7 +39,6 @@ const Home = () => {
     const clickShow = (showId) => {
         const LinkTo = `/showDetails/${showId}`;
         navigate(LinkTo);
-
     }
 
     if (isLoading) {
@@ -79,8 +64,6 @@ const Home = () => {
                                 <li>{serija._embedded.show.genres?.[0]}</li>
                                 <li>{serija._embedded.show.genres?.[1]}</li>
                             </ul>
-
-
                             <ul className="genresTv">
                                 <li>{serija._embedded.show.genres?.[2]}</li>
                                 <li>{serija._embedded.show.genres?.[3]}</li>

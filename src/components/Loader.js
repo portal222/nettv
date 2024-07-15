@@ -1,5 +1,4 @@
 import React from "react";
-
 import { PuffLoader } from 'react-spinners';
 
 const Loader = () => {
@@ -16,6 +15,5 @@ const Loader = () => {
         </div>
 
     )
-
 }
 export default Loader;

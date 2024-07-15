@@ -28,8 +28,6 @@ const ResultsTvActors = () => {
 
             const data = response.data;
 
-            console.log("rezultat glumci tvShowActors", data)
-
             setTvShow(data);
             setResults(data.length);
         } catch (err) {

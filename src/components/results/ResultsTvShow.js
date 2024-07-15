@@ -75,7 +75,6 @@ const ResultsTvShow = () => {
                                     <li>{dataObj.show.genres?.[0]}</li>
                                     <li>{dataObj.show.genres?.[1]}</li>
                                     <li>{dataObj.show.genres?.[2]}</li>
-                            
                                 </ul>
                             </td>
                         </tr>
